@@ -35,7 +35,7 @@ public class IdentificadorDePerfil {
                 .build();
 
         var chave = System.getenv("OPENAI_API_KEY");
-        var service = new OpenAiService(chave, Duration.ofSeconds(30));
+        var service = new OpenAiService(chave, Duration.ofSeconds(30));// define timeout
 
         System.out.println(
                 service
